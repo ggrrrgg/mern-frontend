@@ -42,6 +42,10 @@ test("can click on login", () => {
 })
 
 test("login function gets jwt", async () => {
+  // mock fetch to make this work
+  // the mocked fetch must return {jwt:"some truthy value"}
+  // variety of ways to mock fetches! 
+  
   let result = await login("admin3", "Password1");
 
   // result on success is an object
